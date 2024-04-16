@@ -16,8 +16,9 @@
       let initData = webapp.initData;
       let initDataUnsafe = webapp.initDataUnsafe;
 
-      document.getElementById("username").innerHTML =
-        initDataUnsafe.user.username;
+      document.getElementById(
+        "username"
+      ).innerHTML = `${window.Telegram.WebApp.initDataUnsafe.user.username} Succes`;
     </script>
   </body>
 </html>

@@ -17,8 +17,9 @@
       let initDataUnsafe = webapp.initDataUnsafe;
 
       document.getElementById("initData").innerText = JSON.stringify(initData);
-      document.getElementById("initDataUnsafe").innerText =
-        JSON.stringify(initDataUnsafe);
+      document.getElementById("initDataUnsafe").innerText = JSON.stringify(
+        initDataUnsafe.user.username
+      );
     </script>
   </body>
 </html>

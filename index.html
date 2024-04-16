@@ -8,13 +8,17 @@
   </head>
   <body>
     <h1>Hello</h1>
+    <div id="initData"></div>
+    <div id="initDataUnsafe"></div>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
       let WebApp = window.Telegram.WebApp;
       let initData = webapp.initData;
-      console.log(initData);
       let initDataUnsafe = webapp.initDataUnsafe;
-      console.log(initDataUnsafe);
+
+      document.getElementById("initData").innerText = JSON.stringify(initData);
+      document.getElementById("initDataUnsafe").innerText =
+        JSON.stringify(initDataUnsafe);
     </script>
   </body>
 </html>
